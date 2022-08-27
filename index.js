@@ -57,6 +57,10 @@ document.addEventListener('keydown', function(e){
         direction = 'south'
     }
 })
+document.addEventListener('keyup', function(e){
+    direction = null
+})
+
 
 
 move(newImage('assets/tree.png')).to(200, 450)
